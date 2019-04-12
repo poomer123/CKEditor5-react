@@ -33,7 +33,7 @@ const App = () => {
             <div className="row">
                 <div className="col-12">
                     <h2 className="text-center">Data</h2>
-                    <div className="my-3">
+                    <div className="text-left my-3">
                         {data}
                     </div>
                 </div>
