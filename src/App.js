@@ -13,8 +13,12 @@ const App = () => {
                         className="my-3"
                         editor={ ClassicEditor }
                         data="<p>CKEditor With React</p>"
+                        config={{
+                            toolbar: [ 'undo', 'redo', '|', 'bulletedList', 'numberedList',]
+                        }}
                         onInit={ editor => {
                             console.log( 'Editor is ready to use!', editor )
+                            console.log(Array.from( editor.ui.componentFactory.names() ))
                         }}
                         onChange={ ( event, editor ) => {
                             const data = editor.getData()
