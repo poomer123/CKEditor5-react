@@ -38,6 +38,12 @@ const App = () => {
                     </div>
                 </div>
             </div>
+            <div className="row">
+                <div className="col-12">
+                    <h2 className="text-center">To show</h2>
+                    <div className="my-3" dangerouslySetInnerHTML={{ __html: data }} />
+                </div>
+            </div>
         </div>
     )
 }
